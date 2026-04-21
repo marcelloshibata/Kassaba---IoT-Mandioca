@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --cor-footer: #319ce2;
+  --cor-navbar: #319ce2;
   --third-wave: #015eb9;
   --card-color: #77ccf7;
+  --green-kassaba: #2A9600;
 }
 
 * {
@@ -17,13 +18,16 @@ body {
 }
 
 .header-nav {
-  background-color: var(--cor-footer);
+  background-color: var(--cor-navbar);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
 }
 
 #logo-header {
@@ -47,7 +51,6 @@ header nav ul li a {
   color: #ffffff;
   font-weight: 600;
   padding: 0.5rem 0;
-  position: relative;
 }
 
 #nav-button {
@@ -71,7 +74,7 @@ header nav ul li a {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 }
 
-#first-section {
+#first-container {
   background: linear-gradient(62.871deg, #002685 0%, #006ca8 100%);
   margin: 0 auto;
   padding: 50px;
@@ -79,7 +82,7 @@ header nav ul li a {
   flex: wrap;
 }
 
-.first-section-main-content {
+.first-container-main-content {
   flex: 0.6;
   text-align: left;
   padding: 3rem 2rem 4rem;
@@ -98,7 +101,7 @@ header nav ul li a {
 }
 
 #highlight-title {
-  color: var(--cor-footer);
+  color: var(--cor-navbar);
 }
 
 #first-section-description {
@@ -110,7 +113,7 @@ header nav ul li a {
   font-weight: 400;
 }
 
-.first-section-main-content button {
+.first-container-main-content button {
   padding: 15px 50px;
   font-size: 15px;
   border: none;
@@ -235,7 +238,7 @@ header nav ul li a {
   margin-top: 60px;
 }
 
-.second-section-main-content {
+.second-container {
   display: flex;
   margin-bottom: 150px;
   margin-left: 150px;
@@ -311,7 +314,7 @@ header nav ul li a {
   transition: all 0.3s ease;
 }
 
-.third-section {
+.third-container {
   margin: 150px;
 }
 
@@ -323,7 +326,7 @@ header nav ul li a {
 .third-section-cards {
   margin-top: 40px;
   display: flex;
-  gap: 150px;
+  gap: 140px;
   flex-wrap: wrap;
 }
 
@@ -363,4 +366,133 @@ header nav ul li a {
   transform: scale(1.1);
   transition: all 0.3s ease;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.fourth-container {
+  background: linear-gradient(62.871deg, #002685 0%, #006ca8 100%);
+}
+
+#fourth-container-content {
+  margin: 200px;
+  display: flex;
+  height: 1250px;
+}
+
+.kassaba-project {
+  position: absolute;
+  margin-top: 300px;
+  background-color: white;
+  border-radius: 20px;
+  width: 420px;
+  height: 650px;
+  z-index: 2;
+}
+
+#kassaba-project-shadow {
+  position: absolute;
+  margin-top: 275px;
+  background-color: #2C61A1;
+  border-radius: 20px;
+  padding: 240px;
+  left: 170px;
+  height: 700px;
+}
+
+.kassaba-content {
+  margin-left: 600px;
+  margin-top: 400px;
+  justify-content: center;
+}
+
+.kassaba-card-container {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2,180px);
+  gap: 20px;
+}
+
+.kassaba-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);;
+}
+
+.kassaba-project-header {
+  display: flex;
+  margin-top: 20px;
+  gap: 120px;
+}
+
+.kassaba-project-header strong {
+  color: #898989;
+  font-weight: 400;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+.kassaba-project-header span {
+  position: relative;
+  right: 10px;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 15px;
+  background-color: #BFF5FB;
+  border-radius: 20px;
+  color: var(--cor-navbar);
+  font-size: 12px;
+}
+
+.kassaba-project h2 {
+  color: var(--green-kassaba);
+  font-size: 32px;
+  margin-left: 20px;
+  position: relative;
+  bottom: 10px;
+  margin-bottom: 50px;
+}
+
+.kassaba-project h3 {
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+#h4-humidity {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+#percent-humidity {
+  font-size: 18px;
+}
+
+.temperature p {
+  position: relative;
+  bottom: 27px;
+}
+
+.temperature img{
+  position: relative;
+  bottom: 30px;
+  left: 100px;
+}
+
+.weather img{
+  margin-top: 10px;
+}
+
+.weather p {
+  font-size: 13px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.irrigation p {
+  position: relative;
+  font-size: 13px;
+  top: 80px;
+  color: var(--green-kassaba);
 }
