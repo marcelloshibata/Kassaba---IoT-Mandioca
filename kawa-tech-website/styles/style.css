@@ -399,8 +399,8 @@ header nav ul li a {
 }
 
 .kassaba-content {
-  margin-left: 600px;
-  margin-top: 400px;
+  margin-left: 700px;
+  margin-top: 300px;
   justify-content: center;
 }
 
@@ -495,4 +495,48 @@ header nav ul li a {
   font-size: 13px;
   top: 80px;
   color: var(--green-kassaba);
+}
+
+.kassaba-content h2 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.kassaba-content h1 {
+  color: white;
+  font-weight: 1000;
+  font-size: 60px;
+}
+
+.kassaba-h1 {
+  margin-bottom: 45px;
+}
+
+#camp {
+  color: var(--green-kassaba);
+}
+
+.kassaba-content p {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  max-width: 700px;
+  margin-bottom: 70px;
+}
+
+.kassaba-content button {
+  width: 200px;
+  height: 60px;
+  border: none;
+  border-radius: 20px;
+  color: var(--green-kassaba);
+  font-weight: 600;
+  font-size: 14px;
+  transition: all ease 0.3s;
+}
+
+.kassaba-content button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
