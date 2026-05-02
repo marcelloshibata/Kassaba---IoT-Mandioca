@@ -749,65 +749,193 @@ footer strong {
   margin-top: 10px;
 }
 
-@media (max-width: 1500px) {
-  .first-section-btns {
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-  }
-}
-
-@media (max-width: 850px) {
+@media (max-width: 1450px) {
   #first-container {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 120px 28px 60px;
+    align-items: center;
+    padding: 120px 48px 80px;
+  }
+
+  .first-container-main-content {
+    min-width: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-section-title {
+    line-height: 1;
+    margin-bottom: 0.4rem;
+  }
+
+  #first-section-description {
+    max-width: 620px;
+    text-align: center;
+  }
+
+  .first-section-btns {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
   .institutional-panel {
-    max-width: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 850px) {
+  .header-nav {
+    justify-content: center;
+    height: 80px;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  #logo-header {
+    width: 120px;
     height: auto;
   }
 
+  #first-container {
+    padding: 120px 24px 70px;
+    gap: 70px;
+  }
+
+
+  #first-section-description {
+    font-size: 17px;
+    margin-top: 48px;
+  }
+
+  .first-section-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    width: 50%;
+  }
+
+  .first-section-btns a {
+    width: 100%;
+  }
+
+  .kawa-button {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .institutional-panel {
+    padding: 24px;
+    border-radius: 24px;
+  }
+
   .cards {
-    flex-wrap: wrap;
-    gap: 80px;
+    flex-direction: column;
+    gap: 24px;
   }
 
   .featured-project,
   .brand-focus {
-    flex: 1 1 100%;
     min-width: 0;
-  }
-
-  .first-container-main-content {
     width: 100%;
-    min-width: 0;
-    padding: 0;
-    margin: 0;
+    flex: none;
   }
 
-  .first-section-title {
-    font-size: clamp(2.5rem, 11vw, 4rem);
-    line-height: 1;
-    margin-bottom: 0.25rem;
+  .second-container,
+  .third-container,
+  .methodology-container,
+  .differences-container {
+    margin: 90px 24px;
+  }
+
+  .second-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .second-section-main-content-texts {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .titles {
+    line-height: 1.1;
+  }
+
+  .second-section-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .second-section-card {
+    width: 100%;
+    height: auto;
+    min-height: 180px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .third-section-cards {
+    gap: 24px;
+  }
+
+  .third-section-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  #first-container {
+    padding: 110px 16px 60px;
+  }
+
+  #highlight-title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
   }
 
   #first-section-description {
-    margin-top: 50px;
-    font-size: 18px;
-    max-width: 100%;
+    font-size: 16px;
   }
 
-
-  .kawa-button {
-    width: 100%;
-    max-width: 275px;
+  .third-section-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
   }
 
+  .institutional-panel {
+    padding: 18px;
+  }
 
-  .kawa-button {
-    width: 100%;
-    max-width: 300px;
+  .featured-project,
+  .brand-focus {
+    padding: 26px;
+  }
+
+  .second-container,
+  .third-container,
+  .methodology-container,
+  .differences-container {
+    margin: 70px 16px;
   }
 }
