@@ -48,4 +48,5 @@ differencesCards.forEach((card) => {
          card.classList.add("hidden");
          observer.observe(card);
     }
-}); 
+});
+
