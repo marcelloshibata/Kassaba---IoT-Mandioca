@@ -1,7 +1,7 @@
 const observer = new IntersectionObserver( // Observa os elementos e adiciona a classe "visible" e remove a classe "hidden" quando eles entram na viewport
   (entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
+      if (entry.isIntersecting) { // Verifica se o elemento está visível na viewport
         entry.target.classList.remove("hidden");
         entry.target.classList.add("visible");
         observer.unobserve(entry.target);
@@ -14,39 +14,18 @@ const observer = new IntersectionObserver( // Observa os elementos e adiciona a 
   },
 );
 
-const secondSectionCards = document.querySelectorAll(".second-section-card");
-secondSectionCards.forEach((card) => {
-    if (card.getBoundingClientRect().top < window.innerHeight) { // Verifica se o card já está visível na tela
+function scrollReveal(selector) {
+  document.querySelectorAll(selector).forEach((card) => {
+    if (card.getBoundingClientRect().top < window.innerHeight) {
     } else {
-         card.classList.add("hidden");
-         observer.observe(card); // Começa a observar cada card para aplicar a animação quando eles entrarem na viewport
+      card.classList.add("hidden");
+      observer.observe(card);
     }
-});
+  });
+}
 
-const thirdSectionCards = document.querySelectorAll(".third-section-card");
-thirdSectionCards.forEach((card) => {
-  if (card.getBoundingClientRect().top < window.innerHeight) {    
-    } else {
-         card.classList.add("hidden");
-         observer.observe(card);
-    }
-});
-
-const methodologyCards = document.querySelectorAll(".methodology-card");
-methodologyCards.forEach((card) => {
-  if (card.getBoundingClientRect().top < window.innerHeight) {    
-    } else {
-         card.classList.add("hidden");
-         observer.observe(card);
-    }
-});
-
-const differencesCards = document.querySelectorAll(".differences-card");
-differencesCards.forEach((card) => {
-  if (card.getBoundingClientRect().top < window.innerHeight) {    
-    } else {
-         card.classList.add("hidden");
-         observer.observe(card);
-    }
-});
-
+scrollReveal(".team-member");
+scrollReveal(".second-section-card");
+scrollReveal(".third-section-card");
+scrollReveal(".methodology-card");
+scrollReveal(".differences-card");
