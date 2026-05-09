@@ -37,11 +37,19 @@ body {
   z-index: 100;
 }
 
-#logo-header {
+
+.logo {
   display: flex;
-  width: 100px;
-  height: 100px;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 header nav ul {
@@ -352,8 +360,8 @@ header nav ul li a:hover {
 
 .second-section-cards {
   display: grid;
-  grid-template-columns: repeat(2, 230px);
-  gap: 20px;
+  grid-template-columns: repeat(2, 350px);
+  gap: 30px;
 }
 
 .second-section-card {
@@ -717,14 +725,14 @@ header nav ul li a:hover {
 .differences-card-container {
   margin-left: 150px;
   display: grid;
-  grid-template-columns: repeat(3, 570px);
+  grid-template-columns: repeat(3, 500px);
   gap: 70px;
   margin-bottom: 100px;
 }
 
 .differences-card {
-  width: 320px;
-  height: 170px;
+  width: 400px;
+  height: 200px;
   background-color: var(--card-color);
   padding: 15px;
   border-radius: 20px;
@@ -736,11 +744,12 @@ header nav ul li a:hover {
 }
 
 .differences-card h4 {
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
 .differences-card p {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .differences-card:hover {
