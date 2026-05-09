@@ -574,6 +574,14 @@ header nav ul li a:hover {
 .weather img {
   margin-top: 10px;
 }
+
+.irrigation img {
+  position: absolute;
+  top: 45px;
+  left: 20px;
+  width: 32px;
+  height: auto;
+}
  
 .weather p {
   font-size: 13px;
