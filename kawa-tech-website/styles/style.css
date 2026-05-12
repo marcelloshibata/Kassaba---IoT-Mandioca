@@ -291,12 +291,13 @@ header nav ul li a:hover {
 }
 
 .team-member {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 215px;
-  height: 300px;
+  height: 400px;
 }
 
 .team-img {
@@ -958,6 +959,38 @@ footer strong {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.git-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--third-wave);
+  border: none;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  gap: 10px;
+  top: 300px;
+}
+
+.git-btn img {
+  width: 40px;
+  height: 40px;
+}
+
+.git-btn a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.git-btn:hover {
+  transform: translateY(0) scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 @media (max-width: 1100px) {
