@@ -1009,9 +1009,6 @@ footer strong {
     height: auto;
   }
 
-  .contact-form fieldset input, #comentario {
-    width: 400px;
-  }
 }
 
 .hidden {
@@ -1411,7 +1408,7 @@ footer strong {
   }
 
   .contact-form fieldset input, #comentario {
-    width: 300px;
+    width: 450px;
   }
 }
 
