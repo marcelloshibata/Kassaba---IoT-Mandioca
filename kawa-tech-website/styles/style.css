@@ -798,8 +798,9 @@ header nav ul li a:hover {
 
 .contact-buttons {
   display: flex;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   gap: 80px;
+  margin-top: 30px;
 }
 
 .contact-button-one {
@@ -834,6 +835,66 @@ footer {
 footer strong {
   font-weight: 500;
   margin-top: 10px;
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form fieldset {
+  border: none;
+}
+
+.contact-form fieldset label {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.contact-form fieldset input, #comentario {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 600px;
+  height: 70px;
+  border-radius: 20px;
+  border: none;
+  background-color: #d9d9d9;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  transition: all ease 0.5s;
+}
+
+.contact-form fieldset input::placeholder {
+  color: white;
+}
+
+#comentario {
+  height: 190px;
+}
+
+#comentario::placeholder {
+  color: white;
+  font-family: "Montserrat";
+}
+
+.contact-form fieldset input:focus {
+  outline: 4px solid var(--cor-navbar);
+
+}
+
+#comentario:focus {
+  outline: 4px solid var(--cor-navbar);
 }
 
 @media (max-width: 1450px) {
@@ -946,6 +1007,10 @@ footer strong {
   .differences-card {
     width: 100%;
     height: auto;
+  }
+
+  .contact-form fieldset input, #comentario {
+    width: 400px;
   }
 }
 
@@ -1344,6 +1409,10 @@ footer strong {
     padding: 30px 20px;
     text-align: center;
   }
+
+  .contact-form fieldset input, #comentario {
+    width: 300px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1480,5 +1549,9 @@ footer strong {
   .contact-buttons {
     padding: 0 16px;
     margin-bottom: 40px;
+  }
+
+  .contact-form fieldset input, #comentario {
+    width: 300px;
   }
 }
